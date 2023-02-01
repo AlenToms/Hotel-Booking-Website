@@ -44,7 +44,7 @@
           else
           {
             echo<<<data
-              <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <button type="button" id="modalo" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
                 Login
               </button>
               <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModal">
@@ -71,11 +71,11 @@
         <div class="modal-body">
           <div class="mb-3">
             <label class="form-label">Email / Mobile</label>
-            <input type="text" name="email_mob" required class="form-control shadow-none">
+            <input type="text" id="username" name="email_mob" required class="form-control shadow-none">
           </div>
           <div class="mb-4">
             <label class="form-label">Password</label>
-            <input type="password" name="pass" required class="form-control shadow-none">
+            <input type="password" id="pass" name="pass" required class="form-control shadow-none">
           </div>
           <div class="d-flex align-items-center justify-content-between mb-2">
             <button type="submit" class="btn btn-dark shadow-none">LOGIN</button>

@@ -83,11 +83,30 @@
            $_SESSION['adminLogin'] = $row['sr_no'];
           redirect('../admin1/index.php');
        }
+       else if($row['role']=='STAFF'){
+        if($row['status']==1)
+          {
+        if($row['verify_status']==1)
+            {
+        $_SESSION['staffLogin'] = true;
+           $_SESSION['staffLogin'] = $row['sr_no'];
+           $_SESSION['email'] = $row['email'];
+           $_SESSION['name'] = $row['name'];
+           $_SESSION['sr_no'] =$row['sr_no'];
+        redirect('../staff/index.php');
+      }
+    else{
+      alert('error','Login failed - Please verify your account !');
+    }
+  }else{
+    alert('error','Login failed - Account has been Deactivated');
+  }
       }
       else{
         alert('error','Login failed - Invalid Credentials!');
       }
     }
+  }
   
   ?>
 
