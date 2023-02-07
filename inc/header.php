@@ -36,6 +36,7 @@
                 <ul class="dropdown-menu dropdown-menu-lg-end">
                   <li><a class="dropdown-item" href="profile.php">Profile</a></li>
                   <li><a class="dropdown-item" href="bookings.php">Bookings</a></li>
+                  <li><a class="dropdown-item" href="serv.php">Request Service</a></li>
                   <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                 </ul>
               </div>
